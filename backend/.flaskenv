@@ -1,0 +1,2 @@
+FLASK_APP=server
+SECRET_KEY=superStrongSecret
