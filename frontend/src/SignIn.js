@@ -4,6 +4,8 @@ import {useDispatch, useSelector } from 'react-redux'
 import { login } from './store/auth'
 const SignIn = () => {
     const dispatch = useDispatch()
+    // const auth = useSelector(state => state.auth)
+    // console.log(auth, 'in sign in')
     // const username = useSelector(state => state.auth.username)
     // const isAuthorized = useSelector(state => state.auth.isAuthorized)
     // const [errors, setErrors] = useState({})

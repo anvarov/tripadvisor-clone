@@ -12,12 +12,12 @@ export const authSlice = createSlice({
       // doesn't actually mutate the state because it uses the immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-          state.isAuthorized = true
-          state.username = action.payload
+      state.isAuthorized = true;
+      state.username = action.payload;
     },
     logout: state => {
       state.isAuthorized = false;
-        state.username = '';
+      state.username = '';
     },
   }
 })
