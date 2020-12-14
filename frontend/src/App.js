@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/signup'>
+        <Route path='/signin'>
           <SignIn />
         </Route>
       </Switch>

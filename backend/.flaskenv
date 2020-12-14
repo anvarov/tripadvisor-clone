@@ -1,2 +1,3 @@
 FLASK_APP=server
 SECRET_KEY=superStrongSecret
+FLASK_ENV=development

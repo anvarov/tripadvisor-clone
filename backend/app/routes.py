@@ -12,6 +12,10 @@ def sign_in():
     # csrf_tag = 'sds'
     if form.validate_on_submit():
         print('validated')
-        return jsonify({'username': form.username.data})
-    print(form['csrf_token'].data, 'data csrf')
+        # database query for user, todo 
+        return jsonify({'errors': False})
+    if form.username.errors:
+        return jsonify({'errors': {'usernameFieldError': form.username.errors}})
+    elif form.password.errors:
+        return jsonify({'errors': {'passwordFieldError': form.password.errors}})
     return jsonify({'csrf_tag': csrf_tag})
